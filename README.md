@@ -6,12 +6,15 @@ Git 可以分為 Local（本地）和 Remote（遠端）兩個環境，由於 Gi
 
 當自己開發時會在工作資料夾工作，當要進入檔案庫之前會先將檔案加入暫存區，確認沒問題則 commit 到檔案庫中，最後 push 上去 remote 環境。在 Git 中若是有和其他開發者一起合作，則會需要處理不同 branch 之間 conflict 和 merge 的問題。
 
-.gitignore：要忽略的檔案清單，這是用來告訴 Git，當在做版本控制記錄的時候，忽略這些檔案。通常一些機密資料，如資料庫帳號密碼或是 server IP 位置等，記得要加入。也可以參考 github 上面的一些範本 在新增 repository 時選取對應的程式語言
+.gitignore：要忽略的檔案清單，這是用來告訴 Git，當在做版本控制記錄的時候，忽略這些檔案。
+通常一些機密資料，如資料庫帳號密碼或是 server IP 位置等，記得要加入。也可以參考 github 上面的一些範本 在新增 repository 時選取對應的程式語言
 
 README.md：repository 介紹和使用方式說明（例如：使用方法、參與專案方式等），使用 markdown 語法撰寫。另外通常有 CONTRIBUTING.md 額外說明如何參與貢獻。
 
+
  // 檔案尚未加入過追蹤時使用，即可恢復到檔案尚未加入暫存區
  $ git rm --cached hello.py
+
 
  // 若檔案已經在 repository 內，則使用以下指令
  // repository 與 stage 的檔案都會被還原到 HEAD，但 working directory 內的檔案不變
