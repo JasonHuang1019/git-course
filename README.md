@@ -17,6 +17,8 @@ README.md：repository 介紹和使用方式說明（例如：使用方法、參
 
 
  // 若檔案已經在 repository 內，則使用以下指令
+ 
+ 
  // repository 與 stage 的檔案都會被還原到 HEAD，但 working directory 內的檔案不變
  $ git reset HARD
 
